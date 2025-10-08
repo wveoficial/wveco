@@ -845,49 +845,26 @@ body {
     height: 70px;
 }
 
-/* Logo with official design */
+/* Logo with Image */
 .logo {
     text-decoration: none;
     z-index: 1001;
     position: relative;
     display: flex;
     align-items: center;
-    gap: var(--space-sm);
 }
 
-.logo-icon {
-    width: 40px;
-    height: 40px;
-    background: var(--color-green-olive);
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--shadow-sm);
+.logo-img {
+    height: 50px; /* Ajuste a altura do seu logo aqui */
+    width: auto;
+    display: block;
+    transition: transform 0.2s ease-out;
 }
 
-.logo-letters {
-    font-size: 1.25rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-gold);
-    letter-spacing: -0.5px;
-}
-
-.logo-text {
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-green-olive);
-    transition: color var(--transition-fast);
-    letter-spacing: 1px;
-}
-
-.logo:hover .logo-text {
-    color: var(--color-green-olive-hover);
-}
-
-.logo:hover .logo-icon {
+.logo:hover .logo-img {
     transform: scale(1.05);
 }
+
 
 /* Desktop Navigation */
 .nav-desktop {
@@ -1208,7 +1185,6 @@ body {
 .image-placeholder {
     width: 100%;
     height: 400px;
-    background: linear-gradient(135deg, var(--color-green-olive) 0%, var(--color-gold) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1381,35 +1357,10 @@ body {
     color: var(--color-dark-gray);
 }
 
-/* ===> AQUI ESTÁ A ALTERAÇÃO <=== */
 .card-image {
-    height: 250px; /* Aumentado de 200px para 250px */
+    height: 250px; 
     overflow: hidden;
     margin-top: 50px;
-}
-
-.masculino-bg {
-    background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
-}
-
-.feminino-bg {
-    background: linear-gradient(135deg, #be185d 0%, #ec4899 100%);
-}
-
-.acessorios-bg {
-    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
-}
-
-.calcados-bg {
-    background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
-}
-
-.kids-bg {
-    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
-}
-
-.especiais-bg {
-    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-green-olive) 100%);
 }
 
 .card-image .image-placeholder {
@@ -1828,16 +1779,6 @@ body {
 /* Garante que o efeito de zoom no hover funcione na imagem */
 .produto-card:hover .card-image img {
     transform: scale(1.1);
-}
-
-/* Remove os fundos coloridos dos placeholders que não são mais necessários */
-.masculino-bg,
-.feminino-bg,
-.acessorios-bg,
-.calcados-bg,
-.kids-bg,
-.especiais-bg {
-    background: none;
 }
 
 /* Adiciona um fundo cinza claro para todos os placeholders enquanto a imagem carrega */
