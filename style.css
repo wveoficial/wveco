@@ -845,18 +845,17 @@ body {
     height: 70px;
 }
 
-/* Logo with Image */
+/* Logo with Image - CORRIGIDO */
 .logo {
-    text-decoration: none;
-    z-index: 1001;
-    position: relative;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    z-index: 1001;
 }
 
 .logo-img {
-    height: 50px; /* Ajuste a altura do seu logo aqui */
-    width: auto;
+    height: 55px;  /* Altura controlada para caber no cabeçalho */
+    width: auto;   /* Largura automática para não distorcer a imagem */
     display: block;
     transition: transform 0.2s ease-out;
 }
