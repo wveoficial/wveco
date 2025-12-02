@@ -3,382 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WV & Co. | Transformando autoestima através da moda personalizada</title>
-    
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Página Fora do Ar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #7E8C54 0%, #6B7D47 50%, #5A6C3F 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(126, 140, 84, 0.2);
+        }
+
+        .status-code {
+            font-size: 120px;
+            font-weight: 900;
+            color: #7E8C54;
+            line-height: 1;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(126, 140, 84, 0.1);
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #2d3e1f;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .separator {
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #7E8C54, #8a9a5b);
+            border-radius: 2px;
+            margin: 25px auto;
+        }
+
+        .message {
+            font-size: 18px;
+            color: #556b45;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .reason {
+            background: rgba(126, 140, 84, 0.08);
+            border-left: 4px solid #7E8C54;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .reason-title {
+            font-weight: 700;
+            color: #7E8C54;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .reason-text {
+            color: #556b45;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .contact-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid rgba(126, 140, 84, 0.15);
+        }
+
+        .contact-label {
+            font-size: 14px;
+            color: #7E8C54;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #556b45;
+            font-size: 16px;
+        }
+
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            background: #7E8C54;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: #7E8C54;
+            margin-top: 30px;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            .status-code {
+                font-size: 80px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .message {
+                font-size: 16px;
+            }
+
+            .reason {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="#" class="logo">
-                    <img src="assets/logo.png" alt="WV & Co. Logo" class="logo-img">
-                </a>
-                
-                <nav class="nav-desktop">
-                    <a href="#historia" class="nav-link">História</a>
-                    <a href="#produtos" class="nav-link">Produtos</a>
-                    <a href="#diferenciais" class="nav-link">Diferenciais</a>
-                    <a href="#valores" class="nav-link">Valores</a>
-                    <a href="#cta" class="nav-link">Contato</a>
-                </nav>
+    <div class="container">
+        <div class="icon">🔒</div>
+        
+        <div class="status-code">402</div>
+        
+        <h1>Loja Virtual Bloqueada</h1>
+        
+        <div class="separator"></div>
+        
+        <p class="message">
+            Senhor Witler Vieira, sua loja virtual está temporariamente bloqueada.
+        </p>
 
-                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </button>
+        <div class="reason">
+            <div class="reason-title">⚠️ Motivo da Suspensão</div>
+            <div class="reason-text">
+                Prezado Sr. Witler Vieira, o pagamento da prestação de serviço está em atraso. Sua loja foi bloqueada automaticamente até a regularização do débito pendente. Por favor, entre em contato para resolver e reativar suas vendas o mais breve possível.
             </div>
-
-            <nav class="nav-mobile" id="mobileNav">
-                <a href="#historia" class="nav-link-mobile">História</a>
-                <a href="#produtos" class="nav-link-mobile">Produtos</a>
-                <a href="#diferenciais" class="nav-link-mobile">Diferenciais</a>
-                <a href="#valores" class="nav-link-mobile">Valores</a>
-                <a href="#cta" class="nav-link-mobile">Contato</a>
-            </nav>
         </div>
-    </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-background"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title animate-fade-up">WV & Co.</h1>
-                    <p class="hero-subtitle animate-fade-up">
-                        <span class="highlight">Transformando autoestima</span> através da moda personalizada.
-                    </p>
-                    <a href="#produtos" class="btn btn--primary btn-hero animate-fade-up">
-                        Descubra sua Essência
-                    </a>
+        <div class="contact-section">
+            <div class="contact-label">Entre em Contato</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <span>WhatsApp / Telefone</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <span>Email: suporte@seudominio.com.br</span>
                 </div>
             </div>
-        </section>
-
-        <section id="historia" class="section historia">
-            <div class="container">
-                <div class="historia-grid">
-                    <div class="historia-image animate-slide-left">
-                        <div class="image-container">
-                            <div class="image-placeholder">
-                                <img src="assets/loja.png" alt="Interior do ateliê de alfaiataria da WV & Co. com tecidos e máquina de costura." loading="lazy">
-                                <div class="image-overlay">
-                                    <span class="image-text">O Ateliê WV & Co.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="historia-content animate-slide-right">
-                        <h2 class="section-title">Nossa História</h2>
-                        <p class="text-content">
-                            Na <strong>WV & Co.</strong>, a moda é mais que tecido e costura; é a celebração da identidade. Nascemos com a missão de redefinir a alfaiataria, unindo a tradição de peças feitas sob medida com um estilo que ressoa com o mundo moderno.
-                        </p>
-                        <p class="text-content">
-                            A visão do nosso fundador é simples: cada indivíduo é único e merece peças que se adaptem perfeitamente ao seu corpo e à sua história. Cuidamos de cada detalhe, do design à seleção de materiais, para que cada peça seja uma extensão autêntica de quem você é. Nosso propósito é inspirar confiança e empoderar através da moda.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="produtos" class="section produtos-ecommerce">
-            <div class="container">
-                <h2 class="section-title section-title--center animate-fade-up">Nossa Coleção</h2>
-                <p class="section-subtitle animate-fade-up">Descubra peças únicas que refletem sua personalidade</p>
-                
-                <div class="category-filters animate-fade-up">
-                    <button class="filter-btn active" data-filter="all">Todos</button>
-                    <button class="filter-btn" data-filter="masculino">Masculino</button>
-                    <button class="filter-btn" data-filter="feminino">Feminino</button>
-                    <button class="filter-btn" data-filter="acessorios">Acessórios</button>
-                    <button class="filter-btn" data-filter="calcados">Calçados</button>
-                    <button class="filter-btn" data-filter="kids">Kids</button>
-                </div>
-
-                <div class="produtos-grid">
-                    
-                    <div class="produto-card animate-fade-up" data-category="masculino" style="animation-delay: 0.1s;">
-                        <div class="card-header">
-                            <div class="category-icon masculino-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 2a10 10 0 1 0 10 10V2z"></path>
-                                    <path d="m16 6-4 4-1.5-1.5"></path>
-                                </svg>
-                            </div>
-                            <span class="category-label">Masculino</span>
-                        </div>
-                        <div class="card-image">
-                            <div class="image-placeholder">
-                                <img src="assets/colecao-masculina.png" alt="Modelo vestindo um blazer verde da coleção masculina WV & Co." loading="lazy">
-                                <div class="image-overlay">
-                                    <span class="image-text">Coleção Masculina</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Linha Masculina</h3>
-                            <ul class="produtos-list">
-                                <li>Camisetas básicas e premium (gola V, careca, slim fit)</li>
-                                <li>Camisas sociais e casuais</li>
-                                <li>Calças chino e alfaiataria</li>
-                                <li>Bermudas e shorts</li>
-                                <li>Moletons e blusas de frio</li>
-                                <li>Blazers e jaquetas leves</li>
-                                <li>Regatas e polos</li>
-                                <li>Cuecas e meias premium</li>
-                                <li>Ternos sob medida</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="produto-card animate-fade-up" data-category="feminino" style="animation-delay: 0.2s;">
-                        <div class="card-header">
-                            <div class="category-icon feminino-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="8" r="7"></circle>
-                                    <polyline points="8.21,13.89 7,23 17,23 15.79,13.88"></polyline>
-                                </svg>
-                            </div>
-                            <span class="category-label">Feminino</span>
-                        </div>
-                        <div class="card-image">
-                            <div class="image-placeholder">
-                                <img src="assets/colecao-feminina.png" alt="Modelo feminina com um vestido branco elegante da WV & Co." loading="lazy">
-                                <div class="image-overlay">
-                                    <span class="image-text">Coleção Feminina</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Linha Feminina</h3>
-                            <ul class="produtos-list">
-                                <li>T-shirts e croppeds</li>
-                                <li>Camisas femininas e blusas sociais</li>
-                                <li>Calças alfaiataria, pantalonas, saias</li>
-                                <li>Vestidos casuais e de alfaiataria</li>
-                                <li>Moletons e tricôs femininos</li>
-                                <li>Blazers, jaquetas e coletes</li>
-                                <li>Regatas e bodies</li>
-                                <li>Roupas personalizadas sob medida</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="produto-card animate-fade-up" data-category="acessorios" style="animation-delay: 0.3s;">
-                        <div class="card-header">
-                            <div class="category-icon acessorios-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                    <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1m15.5-6.5l-4.24 4.24M7.76 12.24l-4.24 4.24m12.02-12.02l-4.24 4.24M7.76 7.76L3.52 3.52"></path>
-                                </svg>
-                            </div>
-                            <span class="category-label">Acessórios</span>
-                        </div>
-                        <div class="card-image">
-                            <div class="image-placeholder">
-                                <img src="assets/acessorios-unissex.png" alt="Coleção de acessórios com relógio, óculos de sol e carteira." loading="lazy">
-                                <div class="image-overlay">
-                                    <span class="image-text">Acessórios Premium</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Acessórios Unissex</h3>
-                            <ul class="produtos-list">
-                                <li>Cintos de couro e tecido</li>
-                                <li>Relógios</li>
-                                <li>Pulseiras e bijuterias finas</li>
-                                <li>Carteiras e porta-cartões</li>
-                                <li>Óculos de sol premium</li>
-                                <li>Gravatas, lenços e suspensórios</li>
-                                <li>Bonés, chapéus e boinas</li>
-                                <li>Bolsas e pastas executivas</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="produto-card animate-fade-up" data-category="calcados" style="animation-delay: 0.4s;">
-                        <div class="card-header">
-                            <div class="category-icon calcados-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"></path>
-                                    <path d="m18 2 4 4-4 4"></path>
-                                    <path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"></path>
-                                    <path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"></path>
-                                    <path d="m18 14 4 4-4 4"></path>
-                                </svg>
-                            </div>
-                            <span class="category-label">Calçados</span>
-                        </div>
-                        <div class="card-image">
-                            <div class="image-placeholder">
-                                <img src="assets/calcados-premium.png" alt="Par de sapatos sociais de couro premium da marca WV & Co." loading="lazy">
-                                <div class="image-overlay">
-                                    <span class="image-text">Calçados Premium</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Calçados</h3>
-                            <ul class="produtos-list">
-                                <li>Sapatos sociais e casuais</li>
-                                <li>Tênis estilosos e minimalistas</li>
-                                <li>Mocassins, loafers, botas leves</li>
-                                <li>Sandálias e slides premium</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="produto-card animate-fade-up" data-category="kids" style="animation-delay: 0.5s;">
-                        <div class="card-header">
-                            <div class="category-icon kids-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M9 12h6l-3-3z"></path>
-                                    <path d="m9 21 3-3 3 3"></path>
-                                    <path d="M20 4v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4"></path>
-                                    <path d="M4 4h16"></path>
-                                </svg>
-                            </div>
-                            <span class="category-label">Kids</span>
-                        </div>
-                        <div class="card-image">
-                            <div class="image-placeholder">
-                                <img src="assets/linha-kids.png" alt="Duas crianças sorrindo com roupas da linha infantil da WV & Co." loading="lazy">
-                                <div class="image-overlay">
-                                    <span class="image-text">Linha Infantil</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Linha Kids</h3>
-                            <ul class="produtos-list">
-                                <li>Camisetas e moletons infantis personalizados</li>
-                                <li>Camisas kids</li>
-                                <li>Calças e bermudas kids</li>
-                                <li>Acessórios infantis (bonés, cintos, carteiras)</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="produto-card produto-card--especial animate-fade-up" data-category="all" style="animation-delay: 0.6s;">
-                        <div class="card-header">
-                            <div class="category-icon especiais-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                </svg>
-                            </div>
-                            <span class="category-label">Exclusivos</span>
-                        </div>
-                        <div class="card-image">
-                            <div class="image-placeholder">
-                                <img src="assets/servicos-exclusivos.png" alt="Mãos de um artesão costurando o logo da WV & Co. em uma peça de roupa." loading="lazy">
-                                <div class="image-overlay">
-                                    <span class="image-text">Serviços Exclusivos</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Diferenciais Especiais</h3>
-                            <ul class="produtos-list especiais">
-                                <li data-icon="🎯">Personalização sob medida com bordado de iniciais</li>
-                                <li data-icon="✂️">Ajuste de modelagem personalizado</li>
-                                <li data-icon="🎨">Escolha de tecidos e cores exclusivas</li>
-                                <li data-icon="🎁">Kits presentes e combos especiais</li>
-                                <li data-icon="🍂">Produtos sazonais e edições limitadas</li>
-                                <li data-icon="👔">Consultoria de estilo individual</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="diferenciais" class="section diferenciais">
-            <div class="container">
-                <h2 class="section-title section-title--center animate-fade-up">Nossos Diferenciais</h2>
-                <div class="diferenciais-grid">
-                    <div class="diferencial-item animate-scale-up" style="animation-delay: 0.1s;">
-                        <div class="diferencial-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
-                        </div>
-                        <h3 class="diferencial-title">Atendimento Personalizado</h3>
-                        <p class="diferencial-description">
-                            Uma consultoria dedicada para guiar você na escolha de cada detalhe.
-                        </p>
-                    </div>
-                    <div class="diferencial-item animate-scale-up" style="animation-delay: 0.2s;">
-                        <div class="diferencial-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                            </svg>
-                        </div>
-                        <h3 class="diferencial-title">Qualidade e Exclusividade</h3>
-                        <p class="diferencial-description">
-                            Luxo acessível, com materiais premium e acabamento artesanal impecável.
-                        </p>
-                    </div>
-                    <div class="diferencial-item animate-scale-up" style="animation-delay: 0.3s;">
-                        <div class="diferencial-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"></path>
-                                <path d="m9 12 2 2 4-4"></path>
-                            </svg>
-                        </div>
-                        <h3 class="diferencial-title">Sob Medida Premium</h3>
-                        <p class="diferencial-description">
-                            Peças únicas criadas especialmente para seu corpo e estilo pessoal.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="valores" class="section valores">
-            <div class="container">
-                <h2 class="section-title section-title--center animate-fade-up">Nossos Valores</h2>
-                <div class="valores-tags animate-fade-up" style="animation-delay: 0.2s;">
-                    <span class="valor-tag">Autenticidade</span>
-                    <span class="valor-tag">Modernidade</span>
-                    <span class="valor-tag">Qualidade</span>
-                    <span class="valor-tag">Inspiração</span>
-                    <span class="valor-tag">Exclusividade</span>
-                    <span class="valor-tag">Inovação</span>
-                </div>
-                <blockquote class="quote animate-fade-up" style="animation-delay: 0.4s;">
-                    "Nossa missão é inspirar você a vestir sua melhor versão todos os dias."
-                </blockquote>
-            </div>
-        </section>
-
-        <section id="cta" class="section cta">
-            <div class="container">
-                <div class="cta-content animate-fade-up">
-                    <h2 class="cta-title">Descubra sua nova essência.</h2>
-                    <p class="cta-subtitle">
-                        Siga a WV & Co. em nossas redes sociais e comece a viver a experiência da alfaiataria moderna.
-                    </p>
-                    <a href="https://instagram.com/wv_eco/" target="_blank" class="btn btn--secondary btn-cta">
-                        <span class="btn-text">Siga-nos no Instagram</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">&copy; 2025 WV & Co. Todos os direitos reservados.</p>
         </div>
-    </footer>
 
-    <script src="app.js"></script>
+        <div class="footer-text">
+            &copy; 2025 M2 Estratégia Digital. Todos os direitos reservados.
+        </div>
+    </div>
 </body>
 </html>
